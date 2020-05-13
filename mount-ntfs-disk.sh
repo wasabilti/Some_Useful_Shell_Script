@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # Mount ntfs format disk partition on the desktop
+# Workd under MacOS
 
 read -p "Current mount point(eg. /Volume/Package), Enter if not mounted: " CUR_MP
 read -p "Real partition path(eg. /dev/disk0s1): " RE_DEV
