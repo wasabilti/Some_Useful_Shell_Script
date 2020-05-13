@@ -18,7 +18,7 @@ fi
 
 if [ ! -d $M_NAME ]
 then
-	mkdir ~/Desktop/$M_NAME
+	mkdir $M_NAME
 fi
 
 if [ -z $M_NAME ]
