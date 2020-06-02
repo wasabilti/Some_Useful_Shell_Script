@@ -1,6 +1,8 @@
 #!/bin/bash
 
 # make udisk to be bootable and install windows system
+# ref:
+# https://blog.csdn.net/u013128262/article/details/91961913?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase
 
 read -p "Mark your U Disk label and index.eg. HELLOWORLD & disk2" tmp
 
