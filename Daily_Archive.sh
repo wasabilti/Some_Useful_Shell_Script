@@ -74,6 +74,7 @@ done
 # Backup the files and Compress Archive
 
 echo "Starting archive..."
+echo $(date)
 echo
 
 tar -czf $DESTINATOIN $FILE_LIST 2> /dev/null
