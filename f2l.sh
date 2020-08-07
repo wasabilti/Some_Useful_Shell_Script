@@ -28,7 +28,11 @@ c=3*10^8
 
 # lambda in free space
 lambda=$(echo "scale=$digits; $c / ($freq*10^9) * 10^3 " | bc)
-echo "lambda = $lambda mm"
+ld4=$(echo "scale=$digits; $lambda / 4" | bc)
+echo "======================================="
+echo "lambda in free space= $lambda mm"
+echo "lambda / 4 = $ld4 mm"
+echo "---------------------------------------"
 
 # lambda in substrate
 if [ -n "$2" ]
@@ -40,5 +44,9 @@ fi
 if [ -n "$2" ]
 then
 	lambda=$(echo "scale=$digits; $c / ($freq*10^9) * 10^3 / sqrt($eps_r)" | bc)
+	ld4=$(echo "scale=$digits; $lambda / 4" | bc)
+	echo "---------------------------------------"
 	echo "lambda in substrate = $lambda mm"
+	echo "lambda / 4 in substrate = $ld4 mm"
+	echo "======================================="
 fi
